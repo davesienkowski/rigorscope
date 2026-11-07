@@ -1,0 +1,65 @@
+{
+  "id": "forward-ledger",
+  "role": "feature",
+  "version": "0.1.0",
+  "title": "Forward unit ledger",
+  "description": "Records when a unit of work starts and ends in the rigorscope forward ledger by running `rigorscope unit-start` and `rigorscope unit-close`: a wave-start step skill (forward-ledger-start), a close step skill (forward-ledger-close) at wave end, and a plan:pre planner contribution (Mode quick and quick-full only) that asks the quick planner to put the two commands in the first and last task. Advisory and off by default; a missing line is shown as unrecorded, never as a failure. Source: rigorscope capabilities/forward-ledger.",
+  "tier": "full",
+  "requires": [],
+  "engines": {
+    "gsd": ">=1.15.0"
+  },
+  "runtimeCompat": {
+    "supported": [
+      "*"
+    ],
+    "unsupported": []
+  },
+  "skills": [
+    "forward-ledger-start",
+    "forward-ledger-close"
+  ],
+  "agents": [],
+  "hooks": [],
+  "activationKey": "forward_ledger.enabled",
+  "config": {
+    "forward_ledger.enabled": {
+      "type": "boolean",
+      "default": false,
+      "description": "Record unit starts and ends in the rigorscope forward ledger. Off by default and per project: {\"forward_ledger\": {\"enabled\": true}} in a project's .planning/config.json turns the three steps and the quick planner contribution on for that project only; there is no global switch."
+    }
+  },
+  "steps": [
+    {
+      "point": "execute:wave:pre",
+      "ref": {
+        "skill": "forward-ledger-start"
+      },
+      "produces": [],
+      "consumes": [],
+      "onError": "skip"
+    },
+    {
+      "point": "execute:wave:post",
+      "ref": {
+        "skill": "forward-ledger-close"
+      },
+      "produces": [],
+      "consumes": [],
+      "onError": "skip"
+    }
+  ],
+  "contributions": [
+    {
+      "point": "plan:pre",
+      "into": "planner",
+      "fragment": {
+        "path": "fragments/plan-pre-quick-unit.md"
+      },
+      "produces": [],
+      "consumes": [],
+      "onError": "skip"
+    }
+  ],
+  "gates": []
+}

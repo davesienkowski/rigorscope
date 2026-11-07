@@ -1,0 +1,25 @@
+{
+  "name": "rigorscope",
+  "version": "0.1.0",
+  "description": "Local, advisory observability for AI-assisted development pipelines: cost, catch and escape per unit of work.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davesienkowski/rigorscope.git"
+  },
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "bin": {
+    "rigorscope": "bin/rigorscope.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\" \"capabilities/**/tests/*.test.mjs\"",
+    "test:public": "node --test \"test/**/*.test.mjs\" \"capabilities/**/tests/*.test.mjs\"",
+    "test:unit": "node --test \"test/unit/**/*.test.mjs\"",
+    "test:fast": "node --test \"test/prohibitions/*.test.mjs\" \"test/invariant/*.test.mjs\" \"test/golden/*.test.mjs\" \"test/unit/docs.test.mjs\" \"test/unit/docs-otel.test.mjs\" \"capabilities/**/tests/*.test.mjs\"",
+    "demo": "node scripts/demo.mjs"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.memdb/
+/data/*
+!/data/prices-*.json
+!/data/risk-rules-*.json
+.env

@@ -1,0 +1,110 @@
+{
+  "schema": "rigorscope.golden-manifest/1",
+  "units": [
+    {
+      "repo": "repo-a",
+      "kind": "quick",
+      "native_id": "260701-il0"
+    },
+    {
+      "repo": "repo-b",
+      "kind": "plan",
+      "native_id": "01-03"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "plan",
+      "native_id": "04-02"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "260929-93t"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261002-ku7"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261005-odr"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261022-fws"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261022-g5g"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261022-gyo"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261022-h85"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261022-wup"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261023-0d4"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261023-1ry"
+    },
+    {
+      "repo": "repo-c",
+      "kind": "quick",
+      "native_id": "261023-2te"
+    },
+    {
+      "repo": "repo-d",
+      "kind": "plan",
+      "native_id": "29-01"
+    },
+    {
+      "repo": "repo-e",
+      "kind": "plan",
+      "native_id": "35-01"
+    },
+    {
+      "repo": "repo-e",
+      "kind": "quick",
+      "native_id": "261006-jox"
+    },
+    {
+      "repo": "repo-e",
+      "kind": "quick",
+      "native_id": "261007-rni"
+    },
+    {
+      "repo": "repo-f",
+      "kind": "plan",
+      "native_id": "09-03"
+    },
+    {
+      "repo": "repo-g",
+      "kind": "plan",
+      "native_id": "01-03"
+    },
+    {
+      "repo": "repo-g",
+      "kind": "quick",
+      "native_id": "261001-wza"
+    }
+  ]
+}

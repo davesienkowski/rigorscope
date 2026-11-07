@@ -1,0 +1,17 @@
+# Pattern source: the hook-telemetry-report units of the telemetry receiver's repository (a oneshot service with a restrictive umask).
+# Installed by `rigorscope schedule install`; this file is the single source of what is installed and of the PATH
+# that the node check of `schedule install` and `doctor` walks (the first entry must be %h/.local/bin, because the
+# default systemd user PATH finds an older node in /usr/local/bin first).
+[Unit]
+Description=rigorscope: daily ingest of Claude Code transcripts and OTel receiver files
+ConditionPathExists=%h/repos/rigorscope/bin/rigorscope.mjs
+
+[Service]
+Type=oneshot
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/bin/env node %h/repos/rigorscope/bin/rigorscope.mjs ingest
+UMask=0077
+NoNewPrivileges=yes
+Nice=10
+# A oneshot unit has no timeout by default (probed as infinity), so a hung ingest would hold the lock forever.
+TimeoutStartSec=6h

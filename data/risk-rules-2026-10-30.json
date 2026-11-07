@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "version": "2026-10-30",
+  "vocabulary": [
+    "gate-or-hook",
+    "security",
+    "parser",
+    "global-config",
+    "script",
+    "docs"
+  ],
+  "exclude_prefixes": [
+    ".planning/"
+  ],
+  "rules": [
+    {
+      "id": "gate-hook-dir",
+      "tag": "gate-or-hook",
+      "match": "(^|\\/)(hooks|gates?)\\/",
+      "flags": "i"
+    },
+    {
+      "id": "gate-hook-name",
+      "tag": "gate-or-hook",
+      "match": "(^|[\\/_-])(gate|guard|hook)s?([\\/_.-]|$)",
+      "flags": "i",
+      "not": "(compact-digest|digest\\.source)"
+    },
+    {
+      "id": "sec-push-cred",
+      "tag": "security",
+      "match": "(push|credential|secret|token|auth|redact|scrub|vetting|provenance|allowlist|isolation|permission)",
+      "flags": "i"
+    },
+    {
+      "id": "parser-name",
+      "tag": "parser",
+      "match": "(pars(e|er|ing)|lexer|tokeniz|normaliz|classif|frontmatter|discriminator|dedup)",
+      "flags": "i"
+    },
+    {
+      "id": "global-config",
+      "tag": "global-config",
+      "match": "(\\$HOME\\/\\.claude\\/|~\\/\\.claude\\/|settings(\\.local)?\\.json$|managed-settings|\\$HOME\\/\\.gsd\\/|\\.wslconfig)",
+      "flags": "i"
+    },
+    {
+      "id": "script-ext",
+      "tag": "script",
+      "match": "\\.(sh|mjs|cjs|js|py|ts)$",
+      "flags": "i",
+      "not": "(\\.test\\.|\\/tests?\\/|\\/fixtures?\\/)"
+    }
+  ],
+  "docs_only": {
+    "id": "docs-only",
+    "tag": "docs",
+    "match": "\\.(md|txt)$",
+    "flags": "i"
+  },
+  "script_unless": {
+    "id": "script-unless-specific",
+    "tag": "script",
+    "specific": [
+      "gate-or-hook",
+      "security",
+      "parser",
+      "global-config"
+    ]
+  },
+  "notes": "Research v1 rules (02-RESEARCH.md, Risk rules), unchanged: the six path rules of the research script and its two structural rules (docs only when every considered path is .md or .txt; script dropped when a more specific tag matched). Scored on the training file of test/golden only. The not-exception of gate-hook-name was derived from one training-repo file name and is a candidate for the next table version. Change rules only by adding a new dated file, never by editing this one."
+}

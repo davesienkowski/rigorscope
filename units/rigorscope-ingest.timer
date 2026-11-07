@@ -1,0 +1,14 @@
+# Pattern source: the hook-telemetry-report units of the telemetry receiver's repository. Installed by `rigorscope schedule install`.
+# 04:10 local time is outside every common DST transition hour; a persistent timer runs a missed day at the next start.
+[Unit]
+Description=rigorscope: daily ingest timer
+
+[Timer]
+OnCalendar=*-*-* 04:10:00
+Persistent=true
+RandomizedDelaySec=15min
+FixedRandomDelay=true
+Unit=rigorscope-ingest.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "date_read": "2026-10-28",
+  "source_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+  "reread": true,
+  "unit": "usd_per_million_tokens",
+  "label": "notional",
+  "modifiers": {
+    "geo_us": { "num": 11, "den": 10 }
+  },
+  "models": {
+    "claude-fable-5-1": { "input": 10, "cache_write_5m": 12.5, "cache_write_1h": 20, "cache_read": 0.25, "output": 50, "status": "validated" },
+    "claude-fable-5": { "input": 10, "cache_write_5m": 12.5, "cache_write_1h": 20, "cache_read": 1, "output": 50, "status": "cited" },
+    "claude-opus-5-5": {
+      "input": 4, "cache_write_5m": 5, "cache_write_1h": 8, "cache_read": 0.2, "output": 20, "status": "validated",
+      "fast": { "input": 8, "cache_write_5m": 10, "cache_write_1h": 16, "cache_read": 0.4, "output": 40 }
+    },
+    "claude-opus-5": {
+      "input": 5, "cache_write_5m": 6.25, "cache_write_1h": 10, "cache_read": 0.5, "output": 25, "status": "cited",
+      "fast": { "input": 10, "cache_write_5m": 12.5, "cache_write_1h": 20, "cache_read": 1, "output": 50 }
+    },
+    "claude-opus-4-8": {
+      "input": 5, "cache_write_5m": 6.25, "cache_write_1h": 10, "cache_read": 0.5, "output": 25, "status": "validated",
+      "fast": { "input": 10, "cache_write_5m": 12.5, "cache_write_1h": 20, "cache_read": 1, "output": 50 }
+    },
+    "claude-opus-4-7": { "input": 5, "cache_write_5m": 6.25, "cache_write_1h": 10, "cache_read": 0.5, "output": 25, "status": "cited" },
+    "claude-opus-4-6": { "input": 5, "cache_write_5m": 6.25, "cache_write_1h": 10, "cache_read": 0.5, "output": 25, "status": "cited" },
+    "claude-opus-4-5": { "input": 5, "cache_write_5m": 6.25, "cache_write_1h": 10, "cache_read": 0.5, "output": 25, "status": "cited" },
+    "claude-opus-4-1": { "input": 15, "cache_write_5m": 18.75, "cache_write_1h": 30, "cache_read": 1.5, "output": 75, "status": "cited" },
+    "claude-opus-4": { "input": 15, "cache_write_5m": 18.75, "cache_write_1h": 30, "cache_read": 1.5, "output": 75, "status": "cited" },
+    "claude-sonnet-5-5": { "input": 2, "cache_write_5m": 2.5, "cache_write_1h": 4, "cache_read": 0.1, "output": 10, "status": "validated" },
+    "claude-sonnet-5": { "input": 2, "cache_write_5m": 2.5, "cache_write_1h": 4, "cache_read": 0.2, "output": 10, "status": "cited" },
+    "claude-sonnet-4-6": { "input": 3, "cache_write_5m": 3.75, "cache_write_1h": 6, "cache_read": 0.3, "output": 15, "status": "cited" },
+    "claude-sonnet-4-5": { "input": 3, "cache_write_5m": 3.75, "cache_write_1h": 6, "cache_read": 0.3, "output": 15, "status": "cited" },
+    "claude-sonnet-4": { "input": 3, "cache_write_5m": 3.75, "cache_write_1h": 6, "cache_read": 0.3, "output": 15, "status": "cited" },
+    "claude-haiku-5-5": {
+      "input": 0.1, "cache_write_5m": 0.125, "cache_write_1h": 0.2, "cache_read": 0.01, "output": 0.5, "status": "validated",
+      "long_prompt": { "over_tokens": 100000, "input": 0.5, "cache_write_5m": 0.625, "cache_write_1h": 1, "cache_read": 0.05, "output": 2.5 }
+    },
+    "claude-haiku-4-5": { "input": 1, "cache_write_5m": 1.25, "cache_write_1h": 2, "cache_read": 0.1, "output": 5, "status": "cited" }
+  },
+  "notes": [
+    "Read from the page markdown on 2026-10-28; the page shows no last-updated date. Prices are USD per million tokens (MTok).",
+    "Model ids are the page display names mapped to the ids seen in transcripts (01-RESEARCH.md, Model-id mapping); a trailing -YYYYMMDD is stripped before lookup.",
+    "5-minute cache write | 1.25x base input price",
+    "1-hour cache write | 2x base input price",
+    "Cache read (hit) | 0.1x base input price (0.025x on Claude Fable 5.1 and Claude Mythos 5.1; 0.05x on Claude Opus 5.5 and Claude Sonnet 5.5)",
+    "Claude Haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. A request's prompt length counts all of its input tokens, including cache reads and cache writes. Each request is priced on its own.",
+    "For Claude 4.6 and later models, specifying US-only inference through the inference_geo parameter incurs a 1.1x multiplier on all token pricing categories, including input tokens, output tokens, cache writes, and cache reads. Earlier models do not support the inference_geo parameter.",
+    "Fast mode (Claude Opus 5.5 $8 input / $40 output; Claude Opus 5 and Claude Opus 4.8 $10 input / $50 output per MTok): prompt caching multipliers and data residency multipliers apply on top of fast mode pricing. The fast rows here apply those multipliers; they are cited and unobserved in the data.",
+    "The Batch API discount, the tool-use and web-search charges, and Claude Managed Agents pricing are not modeled; web search is priced per 1,000 searches and is not a token charge.",
+    "Left out on purpose: Claude Mythos 5.1, Claude Mythos 5 and Claude Haiku 3.5 (no transcript model id seen for them, so their ids are not guessed). No claude-fable-5-0 row exists on the page."
+  ]
+}

@@ -1,0 +1,1341 @@
+{
+  "ref": "49ea1a9b0c1ef214e582481384dc8d52e7e4b947",
+  "version": "1.19.0",
+  "taken": "2026-11-04",
+  "source": "src/adapters/gsd-core/ROSTER-PROVENANCE.md",
+  "entries": [
+    {
+      "stem": "REVIEW",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase", "quick"],
+      "cite": "agents/gsd-code-reviewer.md:313-332",
+      "cite_path": "agents/gsd-code-reviewer.md",
+      "example": ["01-REVIEW.md", "260101-abc-REVIEW.md"]
+    },
+    {
+      "stem": "REVIEW-FIX",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "agents/gsd-code-fixer.md:601-611",
+      "cite_path": "agents/gsd-code-fixer.md",
+      "example": ["01-REVIEW-FIX.md"]
+    },
+    {
+      "stem": "REVIEW-DISPOSITION",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "workflows/execute-phase/steps/code-review-disposition.md:981-997",
+      "cite_path": "gsd-core/workflows/execute-phase/steps/code-review-disposition.md",
+      "example": ["01-REVIEW-DISPOSITION.md"]
+    },
+    {
+      "stem": "REVIEWS",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "workflows/review.md:658-710",
+      "cite_path": "gsd-core/workflows/review.md",
+      "example": ["01-REVIEWS.md"]
+    },
+    {
+      "stem": "VERIFICATION",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase", "quick"],
+      "cite": "templates/verification-report.md",
+      "cite_path": "gsd-core/templates/verification-report.md",
+      "example": ["01-VERIFICATION.md", "260101-abc-VERIFICATION.md"]
+    },
+    {
+      "stem": "UAT",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "templates/UAT.md:56-63",
+      "cite_path": "gsd-core/templates/UAT.md",
+      "example": ["01-UAT.md"]
+    },
+    {
+      "stem": "HUMAN-UAT",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "src/uat.cts:212",
+      "cite_path": "src/uat.cts",
+      "example": ["01-HUMAN-UAT.md"]
+    },
+    {
+      "stem": "SECURITY",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "templates/SECURITY.md:4-7",
+      "cite_path": "gsd-core/templates/SECURITY.md",
+      "example": ["01-SECURITY.md"]
+    },
+    {
+      "stem": "VALIDATION",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "templates/VALIDATION.md",
+      "cite_path": "gsd-core/templates/VALIDATION.md",
+      "example": ["01-VALIDATION.md"]
+    },
+    {
+      "stem": "UI-REVIEW",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "agents/gsd-ui-auditor.md:423-444",
+      "cite_path": "agents/gsd-ui-auditor.md",
+      "example": ["01-UI-REVIEW.md"]
+    },
+    {
+      "stem": "EVAL-REVIEW",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "agents/gsd-eval-auditor.md:127",
+      "cite_path": "agents/gsd-eval-auditor.md",
+      "example": ["01-EVAL-REVIEW.md"]
+    },
+    {
+      "stem": "DOM-VERIFY",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "references/agent-contracts.md:24",
+      "cite_path": "gsd-core/references/agent-contracts.md",
+      "example": ["01-DOM-VERIFY.md"]
+    },
+    {
+      "stem": "COVERAGE",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "src/gate-api-coverage-verify-pre.cts:236",
+      "cite_path": "src/gate-api-coverage-verify-pre.cts",
+      "example": ["01-COVERAGE.md"]
+    },
+    {
+      "stem": "REFACTOR",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "src/complexity-trigger.cts:44",
+      "cite_path": "src/complexity-trigger.cts",
+      "example": ["01-REFACTOR.md"]
+    },
+    {
+      "stem": "FALLOW-normalized",
+      "ext": ".json",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "workflows/code-review.md:776",
+      "cite_path": "gsd-core/workflows/code-review.md",
+      "example": ["01-FALLOW-normalized.json"]
+    },
+    {
+      "stem": "FALLOW",
+      "ext": ".json",
+      "class": "F",
+      "scopes": ["phase"],
+      "cite": "steps/structural-pre-pass.md:33",
+      "cite_path": "gsd-core/workflows/code-review/steps/structural-pre-pass.md",
+      "example": ["01-FALLOW.json"]
+    },
+    {
+      "stem": "SUMMARY",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase", "quick"],
+      "cite": "agents/gsd-executor.md:763",
+      "cite_path": "agents/gsd-executor.md",
+      "example": ["01-SUMMARY.md", "260101-abc-SUMMARY.md"]
+    },
+    {
+      "re": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}-MILESTONE-AUDIT$",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["milestones"],
+      "cite": "workflows/audit-milestone.md:198-205",
+      "cite_path": "gsd-core/workflows/audit-milestone.md",
+      "example": ["v1.0-MILESTONE-AUDIT.md"]
+    },
+    {
+      "re": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}-MILESTONE-AUDIT$",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["root"],
+      "cite": "workflows/audit-milestone.md:198-205",
+      "cite_path": "gsd-core/workflows/audit-milestone.md",
+      "example": ["v1.0-MILESTONE-AUDIT.md"]
+    },
+    {
+      "stem": "WINDOWS",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["root"],
+      "cite": "src/broken-windows.cts:6-30",
+      "cite_path": "src/broken-windows.cts",
+      "example": ["WINDOWS.md"]
+    },
+    {
+      "path_glob": "debug/*.md",
+      "class": "F",
+      "scopes": [],
+      "cite": "templates/DEBUG.md",
+      "cite_path": "gsd-core/templates/DEBUG.md"
+    },
+    {
+      "path_glob": "debug/resolved/*.md",
+      "class": "F",
+      "scopes": [],
+      "cite": "templates/DEBUG.md",
+      "cite_path": "gsd-core/templates/DEBUG.md"
+    },
+    {
+      "path_glob": "reports/SESSION_REPORT",
+      "class": "F",
+      "scopes": [],
+      "cite": "workflows/session-report.md:64",
+      "cite_path": "gsd-core/workflows/session-report.md"
+    },
+    {
+      "path_glob": "forensics/report-*.md",
+      "class": "F",
+      "scopes": [],
+      "cite": "workflows/forensics.md:180",
+      "cite_path": "gsd-core/workflows/forensics.md"
+    },
+    {
+      "stem": "deferred-items",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["phase", "quick"],
+      "cite": "agents/gsd-executor.md:265; workflows/quick.md:717",
+      "cite_path": "agents/gsd-executor.md",
+      "example": ["01-deferred-items.md", "260101-abc-deferred-items.md"]
+    },
+    {
+      "stem": "INBOX-TRIAGE",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["root"],
+      "cite": "workflows/inbox.md:299",
+      "cite_path": "gsd-core/workflows/inbox.md",
+      "example": ["INBOX-TRIAGE.md"]
+    },
+    {
+      "stem": "INGEST-CONFLICTS",
+      "ext": ".md",
+      "class": "F",
+      "scopes": ["root"],
+      "cite": "agents/gsd-doc-synthesizer.md:176",
+      "cite_path": "agents/gsd-doc-synthesizer.md",
+      "example": ["INGEST-CONFLICTS.md"]
+    },
+    {
+      "path_glob": "debug/knowledge-base.md",
+      "class": "F",
+      "scopes": [],
+      "cite": "agents/gsd-debugger.md:989",
+      "cite_path": "agents/gsd-debugger.md"
+    },
+    {
+      "stem": "CONTEXT",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-CONTEXT.md", "260101-abc-CONTEXT.md"]
+    },
+    {
+      "stem": "DISCUSSION-LOG",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-DISCUSSION-LOG.md", "260101-abc-DISCUSSION-LOG.md"]
+    },
+    {
+      "stem": "RESEARCH",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-RESEARCH.md", "260101-abc-RESEARCH.md"]
+    },
+    {
+      "stem": "PATTERNS",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-PATTERNS.md", "260101-abc-PATTERNS.md"]
+    },
+    {
+      "stem": "PLAN-OUTLINE",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-PLAN-OUTLINE.md", "260101-abc-PLAN-OUTLINE.md"]
+    },
+    {
+      "stem": "PLAN",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-PLAN.md", "260101-abc-PLAN.md"]
+    },
+    {
+      "stem": "UI-SPEC",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-UI-SPEC.md", "260101-abc-UI-SPEC.md"]
+    },
+    {
+      "stem": "AI-SPEC",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-AI-SPEC.md", "260101-abc-AI-SPEC.md"]
+    },
+    {
+      "stem": "SPEC",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-SPEC.md", "260101-abc-SPEC.md"]
+    },
+    {
+      "stem": "SKELETON",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-SKELETON.md", "260101-abc-SKELETON.md"]
+    },
+    {
+      "stem": "LEARNINGS",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-LEARNINGS.md", "260101-abc-LEARNINGS.md"]
+    },
+    {
+      "stem": "QUESTIONS",
+      "ext": ".json",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-QUESTIONS.json", "260101-abc-QUESTIONS.json"]
+    },
+    {
+      "stem": "QUESTIONS",
+      "ext": ".html",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-QUESTIONS.html", "260101-abc-QUESTIONS.html"]
+    },
+    {
+      "stem": "DISCUSS-CHECKPOINT",
+      "ext": ".json",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-DISCUSS-CHECKPOINT.json", "260101-abc-DISCUSS-CHECKPOINT.json"]
+    },
+    {
+      "stem": "MEMORY-RECALL",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (phase or quick list)",
+      "cite_path": null,
+      "cite_note": "declared by the mempalace capability, no writer found; extension .md assumed, not stated by the roster document",
+      "example": ["01-MEMORY-RECALL.md", "260101-abc-MEMORY-RECALL.md"]
+    },
+    {
+      "stem": "DISCOVERY",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["phase", "quick"],
+      "cite": "agents/gsd-planner.md:708",
+      "cite_path": "agents/gsd-planner.md",
+      "example": ["01-DISCOVERY.md", "260101-abc-DISCOVERY.md"],
+      "cite_note": "no writer found; extension .md assumed, not stated by the roster document"
+    },
+    {
+      "path_glob": "quick-batches/**",
+      "class": "E",
+      "scopes": [],
+      "cite": "docs/adr/1239-gsd-embeddable-orchestration-engine.md:329",
+      "cite_path": "docs/adr/1239-gsd-embeddable-orchestration-engine.md"
+    },
+    {
+      "path_glob": "spikes/**",
+      "class": "E",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "sketches/**",
+      "class": "E",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "spikes/WRAP-UP-SUMMARY.md",
+      "class": "E",
+      "scopes": [],
+      "cite": "gsd-core/workflows/help/modes/full.md:387",
+      "cite_path": "gsd-core/workflows/help/modes/full.md"
+    },
+    {
+      "path_glob": "sketches/WRAP-UP-SUMMARY.md",
+      "class": "E",
+      "scopes": [],
+      "cite": "gsd-core/workflows/help/modes/full.md:398",
+      "cite_path": "gsd-core/workflows/help/modes/full.md"
+    },
+    {
+      "path_glob": "research/*",
+      "class": "E",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "codebase/*",
+      "class": "E",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "onboarding/SUMMARY.md",
+      "class": "E",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "re": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}-RELEASE-MAP$",
+      "ext": ".json",
+      "class": "E",
+      "scopes": ["milestones"],
+      "cite": "docs/CONFIGURATION.md:1339",
+      "cite_path": "docs/CONFIGURATION.md",
+      "example": ["v1.0-RELEASE-MAP.json"]
+    },
+    {
+      "path_glob": "milestones/**",
+      "class": "E",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "stem": "RETROSPECTIVE",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["RETROSPECTIVE.md"]
+    },
+    {
+      "stem": "MILESTONES",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["MILESTONES.md"]
+    },
+    {
+      "path_glob": "reports/MILESTONE_SUMMARY-*",
+      "class": "E",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (other list)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "ui-reviews/<phase>-<time>/",
+      "class": "E",
+      "scopes": [],
+      "cite": "agents/gsd-ui-auditor.md:114",
+      "cite_path": "agents/gsd-ui-auditor.md"
+    },
+    {
+      "stem": "WORKSPACE",
+      "ext": ".md",
+      "class": "E",
+      "scopes": ["root"],
+      "cite": "workflows/new-workspace.md:168-170",
+      "cite_path": "gsd-core/workflows/new-workspace.md",
+      "example": ["WORKSPACE.md"]
+    },
+    {
+      "path_glob": "<workspace>/.planning/**",
+      "class": "E",
+      "scopes": [],
+      "cite": "workflows/new-workspace.md:168-170",
+      "cite_path": "gsd-core/workflows/new-workspace.md"
+    },
+    {
+      "stem": "PROJECT",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["PROJECT.md"]
+    },
+    {
+      "stem": "ROADMAP",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["ROADMAP.md"]
+    },
+    {
+      "stem": "REQUIREMENTS",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["REQUIREMENTS.md"]
+    },
+    {
+      "stem": "STATE",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["STATE.md"]
+    },
+    {
+      "re": "^STATE\\.md\\.bak-.+$",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["STATE.md.bak-1"]
+    },
+    {
+      "stem": "state",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["state.json"]
+    },
+    {
+      "stem": "STATE-ARCHIVE",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path; extension .md assumed, not stated by the roster document",
+      "example": ["STATE-ARCHIVE.md"]
+    },
+    {
+      "stem": "config",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["config.json"]
+    },
+    {
+      "path_glob": "threads/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "seeds/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "todos/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "notes/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "stem": "PATTERNS",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["PATTERNS.md"]
+    },
+    {
+      "stem": "LEARNINGS",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["LEARNINGS.md"]
+    },
+    {
+      "stem": "HANDOFF",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["HANDOFF.json"]
+    },
+    {
+      "stem": ".continue-here",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".continue-here.md"]
+    },
+    {
+      "stem": "milestone.lock",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["milestone.lock"]
+    },
+    {
+      "stem": ".lock",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".lock"]
+    },
+    {
+      "stem": "WAITING",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["WAITING.json"]
+    },
+    {
+      "path_glob": ".gsd/WAITING.json",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "stem": "skill-manifest",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["skill-manifest.json"]
+    },
+    {
+      "stem": "estimation-calibration",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["estimation-calibration.json"]
+    },
+    {
+      "stem": "complexity-baseline",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["complexity-baseline.json"]
+    },
+    {
+      "path_glob": "tmp/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "async-jobs/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "intel/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "research/.cache/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "graphs/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "workstreams/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "stem": "active-workstream",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["active-workstream"]
+    },
+    {
+      "re": "^\\.gsd-.+$",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".gsd-example"]
+    },
+    {
+      "stem": ".gsd-trace",
+      "ext": ".jsonl",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".gsd-trace.jsonl"]
+    },
+    {
+      "stem": ".mempalace-stage",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".mempalace-stage"]
+    },
+    {
+      "stem": ".WINDOWS.lock",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".WINDOWS.lock"]
+    },
+    {
+      "stem": "STATE.md.lock",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["STATE.md.lock"]
+    },
+    {
+      "stem": ".consent.lock",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".consent.lock"]
+    },
+    {
+      "stem": "current-agent-id.txt",
+      "ext": "",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["current-agent-id.txt"]
+    },
+    {
+      "stem": "agent-history",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["agent-history.json"]
+    },
+    {
+      "stem": ".review-fix-recovery-pending",
+      "ext": ".json",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".review-fix-recovery-pending.json"]
+    },
+    {
+      "path_glob": "ui-reviews/.gitignore",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "stem": ".gitkeep",
+      "ext": "",
+      "class": "S",
+      "scopes": ["phase", "quick", "phases-root", "quick-root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": [".gitkeep"]
+    },
+    {
+      "path_glob": ".gsd/dispatch-isolation-sentinel.json",
+      "class": "S",
+      "scopes": [],
+      "cite": "gsd-core/bin/gsd-tools.cjs:2946",
+      "cite_path": "gsd-core/bin/gsd-tools.cjs"
+    },
+    {
+      "path_glob": ".gsd/harness-fork-probe.json",
+      "class": "S",
+      "scopes": [],
+      "cite": "src/worktree-base-ref.cts:625",
+      "cite_path": "src/worktree-base-ref.cts"
+    },
+    {
+      "path_glob": ".gsd/.gitignore",
+      "class": "S",
+      "scopes": [],
+      "cite": "gsd-core/bin/gsd-tools.cjs:2946",
+      "cite_path": "gsd-core/bin/gsd-tools.cjs"
+    },
+    {
+      "re": "^.+\\.iter\\d+$",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["phase", "quick"],
+      "cite": "workflows/code-review-fix.md:312-315",
+      "cite_path": "gsd-core/workflows/code-review-fix.md",
+      "example": ["01-REVIEW.iter1.md", "260101-abc-REVIEW.iter2.md"]
+    },
+    {
+      "stem": "PLAN.pre-bounce",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["phase", "quick"],
+      "cite": "workflows/plan-phase/detail/elaboration.md:171-173",
+      "cite_path": "gsd-core/workflows/plan-phase/detail/elaboration.md",
+      "example": ["01-01-PLAN.pre-bounce.md"]
+    },
+    {
+      "stem": "BACKLOG",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "src/artifacts.cts",
+      "cite_path": "src/artifacts.cts",
+      "example": ["BACKLOG.md"]
+    },
+    {
+      "stem": "THREADS",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "src/artifacts.cts",
+      "cite_path": "src/artifacts.cts",
+      "example": ["THREADS.md"]
+    },
+    {
+      "stem": "METHODOLOGY",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (named, no writer found)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["METHODOLOGY.md"]
+    },
+    {
+      "stem": "DECISIONS-INDEX",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (named, no writer found)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["DECISIONS-INDEX.md"]
+    },
+    {
+      "stem": "MILESTONE-CONTEXT",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["root"],
+      "cite": "workflows/new-milestone.md:244",
+      "cite_path": "gsd-core/workflows/new-milestone.md",
+      "example": ["MILESTONE-CONTEXT.md"]
+    },
+    {
+      "path_glob": "deliberations/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (named, no writer found)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "memory/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (named, no writer found)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "logs/**",
+      "class": "S",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (named, no writer found)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "stem": "DEBUG",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["phase"],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited (named, no writer found)",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path",
+      "example": ["01-DEBUG.md"]
+    },
+    {
+      "re": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}-ROADMAP$",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["milestones"],
+      "cite": "workflows/complete-milestone.md:21 and :291 (the archive copy of the live ROADMAP.md; the roster document does not name it)",
+      "cite_path": "gsd-core/workflows/complete-milestone.md",
+      "cite_note": "class S: the archive is a copy of the live ROADMAP.md, which the roster document gives as class S; the document lists the glob milestones/** as class E and classifies no name by it, so this entry (and the REQUIREMENTS archive) deliberately takes the class of the file archived, not the glob's. The label before the suffix is any label of the writer grammar (src/milestone.cts:85), not only a leading v.",
+      "example": ["v1.0-ROADMAP.md", "1.0-ROADMAP.md", "beta-ROADMAP.md"]
+    },
+    {
+      "re": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}-REQUIREMENTS$",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["milestones"],
+      "cite": "workflows/complete-milestone.md:22 and :292 (the archive copy of the live REQUIREMENTS.md)",
+      "cite_path": "gsd-core/workflows/complete-milestone.md",
+      "cite_note": "class S: the archive is a copy of the live REQUIREMENTS.md, which the roster document gives as class S; the document lists the glob milestones/** as class E and classifies no name by it, so this entry takes the class of the file archived, not the glob's. The label before the suffix is any label of the writer grammar (src/milestone.cts:85), not only a leading v.",
+      "example": ["v1.0-REQUIREMENTS.md", "1.0-REQUIREMENTS.md"]
+    },
+    {
+      "stem": "README",
+      "ext": ".md",
+      "class": "S",
+      "scopes": ["quick-root"],
+      "cite": "workflows/complete-milestone.md:296 (the index written into milestones/<label>-quick/ only with --archive-quick)",
+      "cite_path": "gsd-core/workflows/complete-milestone.md",
+      "cite_note": "written only with --archive-quick. Accepted overlap: the quick-root scope lists every quick root, so a README.md loose in the live .planning/quick is also recognized as S; a separate scope for archive quick roots was not added. The roster document does not name this index.",
+      "example": ["README.md"]
+    },
+    {
+      "path_glob": "<temp dir>/gsd-review run directory",
+      "class": "O",
+      "scopes": [],
+      "cite": "workflows/review.md:291-612",
+      "cite_path": "gsd-core/workflows/review.md"
+    },
+    {
+      "path_glob": "<temp dir>/release map",
+      "class": "O",
+      "scopes": [],
+      "cite": "workflows/complete-milestone/steps/release-map.md:9",
+      "cite_path": "gsd-core/workflows/complete-milestone/steps/release-map.md"
+    },
+    {
+      "path_glob": "<temp dir>/wave manifest",
+      "class": "O",
+      "scopes": [],
+      "cite": "capabilities/claude-orchestration/docs/workflow-backend-dispatch.md:99",
+      "cite_path": "capabilities/claude-orchestration/docs/workflow-backend-dispatch.md"
+    },
+    {
+      "path_glob": "<temp dir>/large-output spill",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/io.cts:281",
+      "cite_path": "src/io.cts"
+    },
+    {
+      "path_glob": "<temp dir>/temp JSON of the spec-phase, ui-phase, profile-user, execute-phase and phase-researcher flows",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": ".git/gsd-handoff/**",
+      "class": "O",
+      "scopes": [],
+      "cite": "workflows/execute-phase.md:115",
+      "cite_path": "gsd-core/workflows/execute-phase.md"
+    },
+    {
+      "path_glob": ".git/hooks/pre-commit",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/commands.cts:4338",
+      "cite_path": "src/commands.cts"
+    },
+    {
+      "path_glob": ".git/info/exclude",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/git-info-exclude.cts:41",
+      "cite_path": "src/git-info-exclude.cts"
+    },
+    {
+      "path_glob": "<milestone tag>",
+      "class": "O",
+      "scopes": [],
+      "cite": "workflows/complete-milestone/steps/git-tag.md:8",
+      "cite_path": "gsd-core/workflows/complete-milestone/steps/git-tag.md"
+    },
+    {
+      "path_glob": "<gsd-reviewfix branch>",
+      "class": "O",
+      "scopes": [],
+      "cite": "agents/gsd-code-fixer.md:333-344",
+      "cite_path": "agents/gsd-code-fixer.md"
+    },
+    {
+      "path_glob": ".claude/worktrees/rf-*/**",
+      "class": "O",
+      "scopes": [],
+      "cite": "agents/gsd-code-fixer.md:333-344",
+      "cite_path": "agents/gsd-code-fixer.md"
+    },
+    {
+      "path_glob": "<pull request bodies>",
+      "class": "O",
+      "scopes": [],
+      "cite": "workflows/ship.md:222-378",
+      "cite_path": "gsd-core/workflows/ship.md"
+    },
+    {
+      "path_glob": "<worktree>.worker.json",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/worktree-safety.cts:2797",
+      "cite_path": "src/worktree-safety.cts"
+    },
+    {
+      "path_glob": "<worktree>.worker.log",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/worktree-safety.cts:2797",
+      "cite_path": "src/worktree-safety.cts"
+    },
+    {
+      "path_glob": "<caller-chosen --manifest file>",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/worktree-safety.cts:2054",
+      "cite_path": "src/worktree-safety.cts"
+    },
+    {
+      "path_glob": "Artifacts/jobs/<jobid>/**",
+      "class": "O",
+      "scopes": [],
+      "cite": "capabilities/external-job/capability.json:35-38",
+      "cite_path": "capabilities/external-job/capability.json"
+    },
+    {
+      "path_glob": "<source tree tests from nyquist-auditor and add-tests>",
+      "class": "O",
+      "scopes": [],
+      "cite": "agents/gsd-nyquist-auditor.md:97",
+      "cite_path": "agents/gsd-nyquist-auditor.md"
+    },
+    {
+      "path_glob": "<source tree docs from docs-update and doc-writer>",
+      "class": "O",
+      "scopes": [],
+      "cite": "workflows/docs-update.md:919",
+      "cite_path": "gsd-core/workflows/docs-update.md"
+    },
+    {
+      "path_glob": ".claude/settings.local.json",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/worktree-base-ref.cts:497",
+      "cite_path": "src/worktree-base-ref.cts"
+    },
+    {
+      "path_glob": "<global> USER-PROFILE",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> USER-SETUP",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> profile-pipeline temp files",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> learnings store",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/learnings.cts:134",
+      "cite_path": "src/learnings.cts"
+    },
+    {
+      "path_glob": "<global> surface state",
+      "class": "O",
+      "scopes": [],
+      "cite": "src/surface.cts:183",
+      "cite_path": "src/surface.cts"
+    },
+    {
+      "path_glob": "~/.gsd/consent.json",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "~/.gsd/defaults.json",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": ".gsd-capabilities.json",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> update caches",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> $CLAUDE_ENV_FILE lines",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> hook state",
+      "class": "O",
+      "scopes": [],
+      "cite": "hooks/gsd-statusline.js:1204",
+      "cite_path": "hooks/gsd-statusline.js"
+    },
+    {
+      "path_glob": "<global> user-artifact staging",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> gsd-user-files-backup",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> gsd-local-patches",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<global> external MemPalace store",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<install> bin/install.js, src/install-*, src/runtime-*",
+      "class": "O",
+      "scopes": [],
+      "cite": "derived from gsd-core workflows and templates at the pinned ref; no upstream file cited",
+      "cite_path": null,
+      "cite_note": "the roster document lists this name without a gsd-core path"
+    },
+    {
+      "path_glob": "<installed> AGENTS.md block",
+      "class": "O",
+      "scopes": [],
+      "cite": "bin/install.js:8580",
+      "cite_path": "bin/install.js"
+    }
+  ]
+}
